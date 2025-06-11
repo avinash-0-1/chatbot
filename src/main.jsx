@@ -5,7 +5,7 @@ import ContextProvider from './components/Context.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/chatbot">
   <ContextProvider>
     <App />
   </ContextProvider>
