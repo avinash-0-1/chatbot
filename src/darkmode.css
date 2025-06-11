@@ -1,0 +1,94 @@
+:root{
+    --color1:#faf0dc;
+    --color2_H:white;
+    --color2:#fb8022a0;
+    --color2_Hover:#fb80226e;
+    --color3:black;
+    --color4:#0b414156;
+    --color3_H:rgba(0, 0, 0, 0.196);
+
+    --bg_upper:#faf0dc;                                    /*ffeeb4*/
+    --bg_lower:#ffe0a3;
+    --H:black;
+    --btn:black;
+    --crd_hover:#fb80226e;
+
+/* ====================== FRONT [Light] ========================== */
+    --heading:black;
+    --front_text:black;
+    --btn_bg:black;
+    --btn_hover:#fb80226e;
+    --btn_text:white;
+    --btn_hover_text:black;
+    --darkmode_btn:black;
+    --darkmode_btn_bg:transparent;
+    --upper_bg:#faf0dc;
+/* -------------------------- */
+    --lower_bg:#ffe0a3;
+    --lower_heading:black;
+    --crds_bg:#ffffff;
+    --crds_hover:#fb80226e;
+    --crds_text:black;
+
+/* ====================== chatBot [light] ======================== */
+    --h1:black;
+    --user_input:#0b414127;
+    --guru_response: #ffe0a3;
+    --chat_bg:#faf0dc;
+    --sidebar_bg:#0b414156;
+    --sidebar_hover:rgba(255, 255, 255, 0.553);
+    --sidebar_text:black;
+    --dark_modeBtn:black;
+    --disclaimer:black;
+    /* ====== responsive ========= */
+    --userinput_R:rgba(255, 89, 0, 0.233);
+    --sidebarfull_R:rgb(248, 196, 117);
+}
+body.dark_mode{
+
+/* ====================== FRONT [DARK MODE] ========================== */
+    --heading:#fb8022;
+    --front_text:black;
+    --btn_bg:black;
+    --btn_hover:#fb8022;
+    --btn_text:white;
+    --btn_hover_text:black;
+    --darkmode_btn:white;
+    --darkmode_btn_bg:gray;
+    --upper_bg:gray;
+/* --------------------------- */
+    --lower_bg:#1d2228;
+    --lower_heading:#fb8022;
+    --crds_bg:white;
+    --crds_hover:#fb8022;
+    --crds_text:black;
+/* ==================================================================== */
+
+  --color1:#1d2228;
+    --color2_H:#faac6f;
+    --color2:#fb8022a0;
+    --color2_Hover:#fb80226e;
+    --color3:#e1e2e2;
+    --color4:rgba(255, 255, 255, 0.553);
+    --color3_H:gray;
+
+    --bg_upper:black;                /*b8b8b8*/                    /*ffeeb4*/
+    --bg_lower:#1d2228;
+    --H:#fb8022;
+    --btn:black;
+    --crd_hover:#fb8122;
+/* ======================= chatBot [DARK MODE] =========================== */
+    --h1:#fb8022;
+    --user_input:#fb8422e5;
+    --guru_response:#e1e2e2;
+    --chat_bg:#1d2228;
+    --sidebar_bg:gray;
+    --sidebar_hover:rgba(255, 255, 255, 0.553);
+    --sidebar_text:black;
+    --dark_modeBtn:white;
+    --disclaimer:white;
+   /* ====== responsive ========= */
+    --userinput_R:gray;
+    --sidebarfull_R:#fb8022;
+    
+}

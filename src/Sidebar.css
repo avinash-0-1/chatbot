@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@import './darkmode.css';
+@import './responsive.css';
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+    transition: ease 0.5s;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  background-color:var(--color1);
+}
+/* ==================== colors ======================== */
+
+.front_back{
+  background-color:#faf0dc ;
+}
+
+/* ======================= [side bar] ============================== */
+.sidebar_full{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--sidebar_bg);     /*#F5E9DC*/
+  padding: 5px 10px;
+  border-radius:0px 12px 12px 0px;
+  height: 100%;
+  width: fit-content;
+  /* transition: ease 0.5s; */
+
+}
+.side{
+  display: flex;
+  flex-direction: column;
+  width: 30vh;
+  margin-left: 5%;
+}
+
+.recent-title{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 6%;
+  margin-top:13%;
+  white-space: nowrap;
+}
+#line{
+    border: 1px solid black;
+    height: 1px;
+    width: 28vh;
+    margin-top: 5%;
+}
+.side_upper{
+  display: flex;
+  /* width: 13vh; */
+  padding: 1vh;
+  height: fit-content;
+  width: fit-content;
+}
+.sidebar{
+  gap: 2%;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 3px;
+}
+#NEWChat{
+  display: none;
+}
+.new_chat{    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 48px;
+  border-radius: 0px;
+  margin-left: 3vh;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.new_chat :active{
+    opacity: 98;
+    scale: 0.90;
+}
+.new_chat img{
+  height: 28px;
+  width: 31px;
+}
+.LD{
+  border-radius: 50px;
+  margin-left: 1.8vh;
+  width: 45px;
+  height: 35px;
+  cursor: pointer;
+}
+.LD:active{
+    opacity:98;
+    scale: 0.9;
+}
+
+.LD svg{
+  justify-self: center;
+  width: 31px;
+  fill: var(--dark_modeBtn);
+}
+.recent-entry{
+ display: flex;
+ align-items: start;
+ gap: 5px;
+ padding: 10px;
+ padding-right: 10px;
+ border-radius: 50px;
+ color: #282828;
+ cursor: pointer;
+}
+.recent-entry:hover{
+  background-color:var(--sidebar_hover);
+}
+.recent-entry img{
+  width: 4vh;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+}
+.bottom-item{
+  cursor: pointer;
+/* ---------------- */
+ display: flex;
+ align-items: start;
+
+ gap: 12px;
+ padding: 10px;
+ padding-right: 10px;
+ border-radius: 50px;
+ color: #000000;
+ cursor: pointer;
+}
+.bottom-item:hover{
+  background-color:var(--sidebar_hover);
+}
+.bottom-item img{
+  width: 4vh;
+}

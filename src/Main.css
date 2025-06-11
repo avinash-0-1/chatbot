@@ -1,0 +1,409 @@
+@import "tailwindcss";
+@import './darkmode.css';
+@import './responsive.css';
+/* @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Amita:wght@400;700&family=Cabin+Sketch:wght@400;700&family=Ceviche+One&family=Croissant+One&family=Estonia&family=Grechen+Fuemen&family=Indie+Flower&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Racing+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Rubik+Marker+Hatch&family=Shrikhand&family=Splash&family=Walter+Turncoat&display=swap'); */
+
+/* .rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+html,body{
+  height: 100%;
+  width: 100%;
+
+ font-family: "Expletus Sans", sans-serif;
+}  
+.bg{
+  width: 100%;
+  height: 100%;
+  background-color: var(--chat_bg);
+  /* background-image: url('./assets/G_1.jpg'); */
+  background-size: cover;
+  background-position: center;
+  /* border-radius: 55px 55px 55px 55px; */
+  transition: ease 0.5s;
+}
+#main{
+  flex:1;
+  height: 100vh;
+  padding: 2vh;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(50px);
+  inset: 0;
+  position: relative;
+}
+.G{
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+.g_response{
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 5vh 5vh 5vh 5vh;
+  padding: 3%;
+  background-color: var(--guru_response);
+}
+.user_input{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 5vh 5vh 5vh 5vh;
+  padding: 2%;
+  background-color: var(--user_input);
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 5vh;
+  font-weight: 800;
+  padding: 1vh;
+  color: rgb(199, 93, 0);
+}
+.nav p{
+  /* color: var(--h1); */
+   background: linear-gradient(to right, rgb(255, 162, 0) , rgb(255, 217, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.nav img{
+  width: 8vh;
+  border-radius: 50%;
+}
+.main_container{
+  width: 120vh;
+  margin: auto;
+}
+.greet{
+  width: 45%;
+  margin-top: -1%;
+  font-size: 3vh;
+  background-color: var(--guru_response);
+  border-radius:  10vh 10vh 10vh 0vh;
+  color: rgb(3, 3, 3);
+  border: 1px solid black; 
+  font-weight: 500;
+  padding: 1%;
+  padding-left: 5%;
+}
+.greet span{
+  font-weight: 700;
+  /* background: -webkit-linear-gradient(16deg,rgb(0, 0, 0),rgb(255, 153, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.cards{
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center; */
+  /* grid-template-columns: repeat(auto-fill,minmax(25vh,1fr)); */
+  gap: 5px;
+  padding: 3vh;
+  margin-left: 6%;
+}
+.G_img{
+  margin-left:-9%;
+  width: 7vh;
+}
+.msg{
+  height: 25vh;
+  width: 100%;
+}
+.card{
+  border: 1px solid black;
+  height: 5vh;
+  border-radius: 55vh;
+  padding: 2vh;
+  background-color: white;
+  /* border-radius: 10px; */
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover{
+  background-color: rgba(248, 209, 110, 0.47);
+}
+.card img{
+  width: 5vh;
+  padding: 1vh;
+  position: absolute;
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 10vh;
+  left: 0.1vh;
+}
+.G_img{
+ margin-top: -5%;
+}
+.card p{
+  color: #000000;
+  font-size: 2vh;
+  margin-left: 0vh;
+}
+
+
+.c_1{
+  width: 86%;
+}
+.c_2{
+  margin-right:10% ;
+  width:75%;
+}
+.c_3{
+  width: 65%;
+  margin-right: 20%;
+}
+.c_4{
+  width:55%;
+  margin-right: 30%;
+}
+.main_bottom{
+  position: absolute;
+  bottom: 0%;
+  width: 110vh;
+  height: 13vh;
+  padding: 0vh 1vh;
+  margin: auto;
+}
+.search_box{
+  /* margin-top: 60vh; */
+  /* margin-bottom: 50px; */
+  margin-left:5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10vh;
+  width: 113vh;
+  border: 1px solid black;
+  background-color: white;
+  padding: 2vh;
+  border-radius: 50vh;
+}
+.search_icon{
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.search_box img{
+  width: 4vh;
+  cursor: pointer;
+}
+.search_box input{
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 2.5vh;
+  padding: 0.3vh;
+}
+.disclaimer{
+  justify-self: center;
+  color: var(--disclaimer);
+  font-size: 2vh;
+  /* margin-left: 12vh; */
+}
+/* ============================================ [RESULT] ============================ */
+
+.result{
+  padding: 0% 5%;
+  height: 74vh;
+  width: 125vh;
+  margin-left: -2vh;
+  margin-bottom: 4vh;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.result_title{
+  margin: 4vh 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+}
+.user_img{
+  margin-left: -5%;
+  width: 6vh;
+  border-radius: 50vh;
+}
+/* .result img{
+  width: 6vh;
+  border-radius: 50vh;
+} */
+.result_data{
+  margin-left: -6vh;
+  margin-right: -6vh;
+  display: flex;
+  align-items: start;
+  gap: 2vh;
+}
+.loader{
+  margin-right: 4%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.loader img{
+  display: flex;
+  align-self: center;
+  width: 55vh;
+  border-radius: 50vh;
+}
+.guru_face{
+  width: 7vh;
+}
+
+@keyframes loader {
+  0%{
+    background-color: -80vh 0vh;
+  }
+  100%{
+    background-position: 80vh 0vh;
+  }
+  
+}
+.result_data p{
+  width: 100%;
+  height: 100%;
+  font-size: 3vh;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* File Upload UI Styles */
+.input-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Selected file preview container */
+.selected-file {
+    height: 4.8vh;
+    width: 5vh;
+    display: flex;
+    /* position: relative; */
+    margin-right:-9vh ;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    /* flex-direction: row; */
+    align-items: center;
+    /* gap: 8px; */
+    border: 0.5px solid black;
+    background-image: url('./assets/picture.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1vh 1.3vh;
+    border-radius: 1vh;
+    font-size: 10px;
+}
+
+/* Remove file button styles */
+.remove-file {
+    background: none;
+    /* border: none; */
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    height: 52%;
+    width: 5%;
+    border-radius: 1vh;
+    padding: 0 4px;
+    /* line-height: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* border-radius: 55vh; */
+    margin-top: -2.5vh;
+    margin-left: -3.8vh;
+    overflow: hidden;
+}
+.file-name{
+  height: 100%;
+  width: 100%;
+}
+.remove-file:hover {
+    color: red;
+    /* background-color: red; */
+    position: absolute;
+    /* background-image: url('./assets/code_icon.png'); */
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-H3dopq6fOmYeZE8Cm3y6UZM1X5VHyNopmw&s'); */
+    /* background-size: cover;
+    background-position: center; */
+}
+
+/* File upload button container */
+#file-upload {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(255, 0, 0); */
+}
+/* File upload label styles */
+#file-upload-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* File upload icon hover effect */
+#file-upload img {
+    transition: transform 0.2s;
+}
+
+#file-upload img:hover {
+    transform: scale(1.1);
+}
+.File_P-div{
+  display: flex;
+  flex-direction: column;
+  gap: 4;
+}
+/* File Preview Styles */
+.file-preview {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-self: center;
+    /* border-radius: 8px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-image {
+    max-width: 100%;
+    /* height: auto; */
+    /* width: fit-content; */
+    height: 25vh;
+
+    /* object-fit: contain; */
+    /* border-radius: 4px; */
+}
+
+.preview-pdf {
+
+    width: 100%;
+    height: 40vh;
+    /* border: none;
+    border-radius: 14px;
+    background-color:#000000 ; */
+    
+}
