@@ -1,8 +1,7 @@
 # 🧘‍♂️ Baba Ji – AI Chatbot Web App
 
 **Baba Ji** is a modern, AI-powered web application designed to deliver intelligent, conversational answers and spiritual guidance. Built with cutting-edge technologies like Google’s Gemini API, it blends advanced AI with a calming, accessible user experience.
-
-STATIC PAGE LINK:- https://avinash-0-1.github.io/chatbot/
+static page LINK:- https://avinash-0-1.github.io/chatbot/
 
 ---
 
