@@ -75,10 +75,7 @@ This project demonstrates the synergy of spiritual design and modern AI technolo
 
 ---
 
-## 📸 Preview (Optional)
-> _Include screenshots or a short video demo of the app interface here._
 
----
 
 ## 📦 How to Run Locally
 
