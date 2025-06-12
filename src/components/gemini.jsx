@@ -1,11 +1,6 @@
+// import { GoogleGenAI } from "@google/genai";
 
-
-// const apikey = "AIzaSyBWF66gyJLU3cxWrPTpswX7ui3RSHaA39g"
-
-
-import { GoogleGenAI } from "@google/genai";
-
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+// const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 async function main(prmt, file = null) {
 // try {
@@ -37,17 +32,30 @@ async function main(prmt, file = null) {
       });
     }
 
+//---------------------------------------------------------------------------------------------------------------- 
+    
+  try {
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ contents }),
+      }
+    );
 
-    const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",  
-      contents: contents,
-    });
+    const data = await response.json();
 
-    return response.text;
-  // } catch (error) {
-  //   console.error("Error in Gemini API:", error);
-  //   return "Sorry, I encountered an error processing your request.";
-  // }
+    const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+    return reply || "No response from Gemini.";
+  } catch (error) {
+    console.error("Gemini API error:", error);
+    return "Error: Could not get response from Gemini.";
+  }
+// ---------------------------------------------------------------------------------------------------------
+ 
 }
 
 
