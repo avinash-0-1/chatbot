@@ -1,13 +1,8 @@
 @import "tailwindcss";
 @import './darkmode.css';
 @import './responsive.css';
-/* @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Amita:wght@400;700&family=Cabin+Sketch:wght@400;700&family=Ceviche+One&family=Croissant+One&family=Estonia&family=Grechen+Fuemen&family=Indie+Flower&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Racing+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Rubik+Marker+Hatch&family=Shrikhand&family=Splash&family=Walter+Turncoat&display=swap'); */
 
-/* .rock-salt-regular {
-  font-family: "Rock Salt", cursive;
-  font-weight: 400;
-  font-style: normal;
-} */
+
 html,body{
   height: 100%;
   width: 100%;
@@ -18,10 +13,10 @@ html,body{
   width: 100%;
   height: 100%;
   background-color: var(--chat_bg);
-  /* background-image: url('./assets/G_1.jpg'); */
+
   background-size: cover;
   background-position: center;
-  /* border-radius: 55px 55px 55px 55px; */
+ 
   transition: ease 0.5s;
 }
 #main{
@@ -97,15 +92,9 @@ html,body{
 }
 .greet span{
   font-weight: 700;
-  /* background: -webkit-linear-gradient(16deg,rgb(0, 0, 0),rgb(255, 153, 0));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 .cards{
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: center; */
-  /* grid-template-columns: repeat(auto-fill,minmax(25vh,1fr)); */
+ 
   gap: 5px;
   padding: 3vh;
   margin-left: 6%;
@@ -124,7 +113,7 @@ html,body{
   border-radius: 55vh;
   padding: 2vh;
   background-color: white;
-  /* border-radius: 10px; */
+ 
   position: relative;
   cursor: pointer;
   margin-bottom: 1%;
@@ -140,7 +129,7 @@ html,body{
   width: 5vh;
   padding: 1vh;
   position: absolute;
-  /* border: 1px solid black; */
+ 
   background-color: white;
   border-radius: 10vh;
   left: 0.1vh;
@@ -179,8 +168,7 @@ html,body{
   margin: auto;
 }
 .search_box{
-  /* margin-top: 60vh; */
-  /* margin-bottom: 50px; */
+ 
   margin-left:5%;
   display: flex;
   align-items: center;
@@ -238,10 +226,6 @@ html,body{
   width: 6vh;
   border-radius: 50vh;
 }
-/* .result img{
-  width: 6vh;
-  border-radius: 50vh;
-} */
 .result_data{
   margin-left: -6vh;
   margin-right: -6vh;
@@ -284,7 +268,7 @@ html,body{
   line-height: 1.8;
 }
 
-/* File Upload UI Styles */
+
 .input-container {
     position: relative;
     flex: 1;
@@ -293,7 +277,7 @@ html,body{
     gap: 4px;
 }
 
-/* Selected file preview container */
+
 .selected-file {
     height: 4.8vh;
     width: 5vh;
@@ -313,8 +297,6 @@ html,body{
     border-radius: 1vh;
     font-size: 10px;
 }
-
-/* Remove file button styles */
 .remove-file {
     background: none;
     /* border: none; */
@@ -341,28 +323,23 @@ html,body{
 }
 .remove-file:hover {
     color: red;
-    /* background-color: red; */
+  
     position: absolute;
-    /* background-image: url('./assets/code_icon.png'); */
-    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-H3dopq6fOmYeZE8Cm3y6UZM1X5VHyNopmw&s'); */
-    /* background-size: cover;
-    background-position: center; */
 }
 
-/* File upload button container */
 #file-upload {
     display: flex;
     align-items: center;
-    /* border: 1px solid rgb(255, 0, 0); */
+
 }
-/* File upload label styles */
+
 #file-upload-label {
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
-/* File upload icon hover effect */
+
 #file-upload img {
     transition: transform 0.2s;
 }
@@ -375,7 +352,7 @@ html,body{
   flex-direction: column;
   gap: 4;
 }
-/* File Preview Styles */
+
 .file-preview {
     margin: 10px 0;
     padding: 10px;
@@ -390,20 +367,11 @@ html,body{
 
 .preview-image {
     max-width: 100%;
-    /* height: auto; */
-    /* width: fit-content; */
     height: 25vh;
-
-    /* object-fit: contain; */
-    /* border-radius: 4px; */
 }
 
 .preview-pdf {
 
     width: 100%;
     height: 40vh;
-    /* border: none;
-    border-radius: 14px;
-    background-color:#000000 ; */
-    
-}
+  }
