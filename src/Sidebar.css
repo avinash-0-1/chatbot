@@ -14,7 +14,6 @@ body{
   display: flex;
   background-color:var(--color1);
 }
-/* ==================== colors ======================== */
 
 .front_back{
   background-color:#faf0dc ;
@@ -30,8 +29,6 @@ body{
   border-radius:0px 12px 12px 0px;
   height: 100%;
   width: fit-content;
-  /* transition: ease 0.5s; */
-
 }
 .side{
   display: flex;
@@ -55,7 +52,6 @@ body{
 }
 .side_upper{
   display: flex;
-  /* width: 13vh; */
   padding: 1vh;
   height: fit-content;
   width: fit-content;
