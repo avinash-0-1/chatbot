@@ -1,13 +1,42 @@
 @import "tailwindcss";
 @import './darkmode.css';
-
+/*:root{
+    --bg_up:#e1e2e2;
+    --bg_down:#1d2228;
+    --text:#fb8122;
+    --btn:black;
+    --btn_hover:#fb8122;
+    --btn_text:white;
+    --card:white;
+    --card_hover:#fb8022;
+    --togglebtn_dark_mode:gray;
+    --togglebtn_dark_text:black;
+ /* ============ main page ================ 
+    --bg_sidebar:rgba(255, 140, 0, 0.192);
+    --icon:black;
+}
+body.dark_mode{
+    --bg_up:rgba(29, 139, 121, 0.639);
+    --bg_down:rgb(83, 82, 79);
+    --text:rgb(0, 0, 0);
+    --btn:rgb(4, 233, 249);
+    --btn_hover:white;
+    --btn_text:black;
+    --card:white;
+    --card_hover:rgb(0, 255, 234);
+    --togglebtn_dark_text:rgb(0, 255, 255);
+/* ============== main page ================= 
+    --text:white;
+    --bg_sidebar:gray;
+    --icon:white;
+}*/
 #upper{
     background-color: var(--upper_bg);
     transition: ease 0.5s;
 }
 
 #D-L{
-    background-color: var(--darkmode_btn_bg);                               
+    background-color: var(--darkmode_btn_bg);                                 /**/
     transition: ease 0.5s;
 }
 #D-L svg{
@@ -19,10 +48,12 @@
 
 #upper-child-right p{
     color: var(--front_text);
+    /* color: var(--bg_down); */
     transition: ease 0.5s;
 }
 #upper-child-right h1{
-
+    /* color: var(--heading); */
+    /* color: var(--bg_down); */
     transition: ease 0.5s;
     background: linear-gradient(to right, rgb(255, 162, 0) , rgb(255, 217, 0));
     -webkit-background-clip: text;
@@ -61,6 +92,13 @@
 #all-cards #crd:hover p{
     color:var(--crds_text);
 }
+/*
+#all-cards #crd h2,p{
+   color:black;
+   transition: ease 0.5s;
+} */
+
+
 #social_media svg{
     width: 5vh;
 }

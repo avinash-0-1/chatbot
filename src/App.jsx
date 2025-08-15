@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from './components/Sidebar'
 import Main from './components/Main'
 import Front from './components/Front'
-
+// import Exp from './components/exp/Exp'
 import { Route, Routes } from 'react-router-dom'
 import Chatbot from './Chatbot'
 

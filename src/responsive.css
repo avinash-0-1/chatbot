@@ -14,6 +14,8 @@
     .chatbot-container {
         display: flex;
         flex-direction: row;
+        /* justify-content: end; */
+        /* align-items: end; */
     }
 }
 @media screen and (max-width: 480px) {
@@ -78,6 +80,7 @@
 
   .result {
     height: 100%;
+    /* padding: 0 1rem; */
   }
   .result_data {
     margin: 0;
@@ -97,6 +100,12 @@
     margin-left: -80vh;
     font-size: 10px;
   }
+  /* .main{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100px;
+    padding-left: -50%;
+  } */
 
   .main_container {
     display: flex;
@@ -118,7 +127,8 @@
   }
   .main_bottom {
     margin-top: 30rem;
-
+    /* position: relative; */
+    /* margin-top: 2rem; */
   }
   .search_box {
     display: flex;
@@ -171,6 +181,7 @@
     justify-content: start;
   }
   .g_response{
+    /* border: 1px solid rgb(238, 4, 4); */
     padding: 4%;
     width: 91%;
   }

@@ -23,6 +23,7 @@
     --darkmode_btn:black;
     --darkmode_btn_bg:transparent;
     --upper_bg:#faf0dc;
+/* -------------------------- */
     --lower_bg:#ffe0a3;
     --lower_heading:black;
     --crds_bg:#ffffff;
@@ -55,6 +56,7 @@ body.dark_mode{
     --darkmode_btn:white;
     --darkmode_btn_bg:gray;
     --upper_bg:gray;
+/* --------------------------- */
     --lower_bg:#1d2228;
     --lower_heading:#fb8022;
     --crds_bg:white;
@@ -70,7 +72,7 @@ body.dark_mode{
     --color4:rgba(255, 255, 255, 0.553);
     --color3_H:gray;
 
-    --bg_upper:black;                
+    --bg_upper:black;                /*b8b8b8*/                    /*ffeeb4*/
     --bg_lower:#1d2228;
     --H:#fb8022;
     --btn:black;

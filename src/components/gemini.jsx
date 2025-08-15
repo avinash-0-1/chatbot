@@ -3,6 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 async function main(prmt, file = null) {
+
     let contents = [];
     
     if (file) {
@@ -48,6 +49,7 @@ function convertFileToBase64(file) {
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => {
+
       const base64 = reader.result.split(',')[1];
       resolve(base64);
     };
