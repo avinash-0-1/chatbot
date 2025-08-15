@@ -55,10 +55,10 @@ const Front = () => {
             <p className="text-lg md:text-l font-bold mt-6 md:mt-5 text-center"><i>"✨{quotes}✨"</i></p>
             <p className="text-base md:text-m font-medium mt-3 text-center">Your Intelligent Guide for Everyday Questions – powered by AI, inspired by ancient wisdom, served with a smile</p>
             <button 
-              onClick={() => navigate("./Main.jsx")}
+              onClick={() => navigate("/chat")}
               className="cursor-pointer font-bold rounded-full w-[50%]  h-[50%]  md:w-[30%] md:h-[15%] text-lg md:text-xl mt-5 mb-5 hover:scale-105 transition duration-200"
               >
-              <Link to={'./Main.jsx'}>Start Chatting</Link>
+              <Link to={'/chat'}>Start Chatting</Link>
             </button> 
           </div>
         </div>
