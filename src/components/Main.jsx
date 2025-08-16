@@ -89,7 +89,7 @@ const Main = () => {
 
                     {/* Enhanced input area with file upload */}
                     <div className="main_bottom">
-                    <form action='#' className="search_box">
+                    <form onSubmit={(e) => { e.preventDefault(); onSend(); }} className="search_box">
                         <div className="input-container">
                             {/* Text input with dynamic placeholder */}
                             <input 
@@ -134,7 +134,7 @@ const Main = () => {
                                     <img src={assets.gallery_icon} alt="Upload"/>
                                 </label>
                             </div>
-                            <button><img onClick={()=>{onSend()}} src={assets.send_icon} alt=""/></button>
+                            <button type='submit'><img onClick={()=>{onSend()}} src={assets.send_icon} alt=""/></button>
                         </div>
                         
                     </form>
